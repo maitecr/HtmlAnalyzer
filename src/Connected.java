@@ -11,7 +11,7 @@ public class Connected {
             connection.connect();
             return true;
         } catch (IOException e) {
-            e.printStackTrace();
+//            e.printStackTrace();
             return false;
         }
     }

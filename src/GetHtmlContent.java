@@ -5,8 +5,9 @@ import java.net.URL;
 
 public class GetHtmlContent {
 
-    public String getPage(URL urlBrowser) throws IOException {
-        BufferedReader readUrlContent = new BufferedReader(new InputStreamReader(urlBrowser.openStream()));
+    public String getPage(String urlBrowser) throws IOException {
+        URL website = new URL(urlBrowser);
+        BufferedReader readUrlContent = new BufferedReader(new InputStreamReader(website.openStream()));
         StringBuilder htmlContent = new StringBuilder();
         String line;
 
