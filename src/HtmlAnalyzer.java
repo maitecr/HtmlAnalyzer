@@ -1,30 +1,30 @@
+import java.io.IOException;
 import java.net.URL;
+import java.util.Scanner;
 
 public class HtmlAnalyzer {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
+        Connected connected = new Connected();
+        GetHtmlContent getHtmlContent = new GetHtmlContent();
+        AnalyzingHtmlContent analyzingHtmlContent = new AnalyzingHtmlContent();
+        ScanUrl scanUrl = new ScanUrl();
+        String result = "";
+        String url = scanUrl.scanUrl();
 
         try {
-            //String url = "http://hiring.axreng.com/internship/example1.html";
-            ScanUrl scanUrl = new ScanUrl();
-            String url = scanUrl.scanUrl();
-
-
-
-            Connected connected = new Connected();
-
             if(connected.isConnected(url)){
-                 GetHtmlContent getHtmlContent = new GetHtmlContent();
                  String htmlContent = getHtmlContent.getPage(url);
-                // System.out.println(htmlContent);
-                // System.out.println(htmlContent.length());
-
-
+                 result = analyzingHtmlContent.analyzingHtmlContent(htmlContent);
+                System.out.println(result);
+                 //System.out.println(htmlContent);
             } else {
                  System.out.println("URL connection error");
             }
-
         } catch (Exception e) {
             e.printStackTrace();
+            return;
+        } finally {
+            getHtmlContent.closeUrlReading();
         }
     }
 }

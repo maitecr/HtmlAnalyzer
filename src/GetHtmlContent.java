@@ -4,12 +4,15 @@ import java.io.InputStreamReader;
 import java.net.URL;
 
 public class GetHtmlContent {
+    private URL website;
+    private BufferedReader readUrlContent;
+    private StringBuilder htmlContent;
+    private String line;
 
     public String getPage(String urlBrowser) throws IOException {
-        URL website = new URL(urlBrowser);
-        BufferedReader readUrlContent = new BufferedReader(new InputStreamReader(website.openStream()));
-        StringBuilder htmlContent = new StringBuilder();
-        String line;
+        website = new URL(urlBrowser);
+        readUrlContent = new BufferedReader(new InputStreamReader(website.openStream()));
+        htmlContent = new StringBuilder();
 
         while ((line = readUrlContent.readLine()) != null) {
             htmlContent.append(line).append("\n");
@@ -18,7 +21,9 @@ public class GetHtmlContent {
         readUrlContent.close();
 
         return htmlContent.toString();
-
     }
 
+    public void closeUrlReading() throws IOException {
+        readUrlContent.close();
+    }
 }

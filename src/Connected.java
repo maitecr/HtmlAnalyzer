@@ -3,7 +3,7 @@ import java.net.URL;
 import java.net.URLConnection;
 
 public class Connected {
-
+    private URL url;
     public static boolean isConnected(String urlBrowser) {
         try {
             URL url = new URL(urlBrowser);
