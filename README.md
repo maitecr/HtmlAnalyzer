@@ -42,7 +42,7 @@ Quanto às classes que compõem a solução, temos:
 
 Testes realizados com as URLs fornecidas para o exercício:
 
-#1 URL: http://hiring.axreng.com/internship/example1.html
+#1 URL: http://hiring.axreng.com/internship/example1.html /
 RETORNO: This is the title.
 
 #2 URL: http://hiring.axreng.com/internship/example2.html /
