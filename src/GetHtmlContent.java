@@ -22,8 +22,4 @@ public class GetHtmlContent {
 
         return htmlContent.toString();
     }
-
-    public void closeUrlReading() throws IOException {
-        readUrlContent.close();
-    }
 }

@@ -1,9 +1,7 @@
 import java.io.IOException;
-import java.net.URL;
-import java.util.Scanner;
 
 public class HtmlAnalyzer {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Connected connected = new Connected();
         GetHtmlContent getHtmlContent = new GetHtmlContent();
         AnalyzingHtmlContent analyzingHtmlContent = new AnalyzingHtmlContent();
@@ -21,10 +19,8 @@ public class HtmlAnalyzer {
                  System.out.println("URL connection error");
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
             return;
-        } finally {
-            getHtmlContent.closeUrlReading();
         }
     }
 }
