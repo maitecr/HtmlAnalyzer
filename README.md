@@ -2,18 +2,8 @@ EASTER_EGG_URLS
 
 Solução desenvolvida em linguagem de programação Java (JDK 17) com a finalidade de retornar o conteúdo encontrado na camada mais profunda entre tags HTML.
 
-<<<<<<< HEAD
 ====================================================================================
  
-=======
-<<<<<<< HEAD
-====================================================================================
- 
-=======
-=================================================================
-
->>>>>>> 03d7163 (ajuste 564845815uiefhdiuhfuf)
->>>>>>> 35a4c71 (final ver ver44545)
 EXECUÇÃO DA APLICAÇÃO:
 
 Passo 1: utilizando o terminal de linha de comando, navega até o diretório do projeto, dentro do diretório src, e compile o código com:
@@ -24,15 +14,7 @@ Passo 2: após a compilação, insira o seguinte comando para executar do progra
 
 java HtmlAnalyzer
 
-<<<<<<< HEAD
 Passo 3: em seguida, será exibida a String "inserir-url-aqui". Neste momento, você poder inserir a URL desejada para execução do programa. Ele retornará o conteúdo HTML encontrado, ou informará sobre alguma inconsistência no conteúdo HTML, ou ainda sobre uma falha de conexão..
-=======
-<<<<<<< HEAD
-Passo 3: em seguida, será exibida a String "inserir-url-aqui". Neste momento, você poder inserir a URL desejada para execução do programa. Ele retornará o conteúdo HTML encontrado, ou informará sobre alguma inconsistência no conteúdo HTML, ou ainda sobre uma falha de conexão..
-=======
-=================================================================
->>>>>>> 03d7163 (ajuste 564845815uiefhdiuhfuf)
->>>>>>> 35a4c71 (final ver ver44545)
 
 ====================================================================================
 
@@ -54,19 +36,9 @@ Quanto às classes que compõem a solução, temos:
 
 #4 GetHtmlContent: classe que captura o HTML, transformando-o e retornando- num objeto String, através da URL que foi dada como entrada no item anterior;
 
-<<<<<<< HEAD
 #5 AnalyzingHtmlContent: classe que recebe o conteúdo HTML convertido em String e verifica se o conteúdo entre as tags está na camada mais profunda, ou se há incoerências na estrutura HTML. Após a verificação, irá retornar no console um dos resultados. A análise de tags e conteúdos é realizada em uma estrutura de repetição, utilizando uma pilha e identificando as tags por meio de expressões regulares (regex).
 
 ====================================================================================
-=======
-<<<<<<< HEAD
-#5 AnalyzingHtmlContent: classe que recebe o conteúdo HTML convertido em String e verifica se o conteúdo entre as tags está na camada mais profunda, ou se há incoerências na estrutura HTML. Após a verificação, irá retornar no console um dos resultados. A análise de tags e conteúdos é realizada em uma estrutura de repetição, utilizando uma pilha e identificando as tags por meio de expressões regulares (regex).
-
-====================================================================================
-=======
-=================================================================
->>>>>>> 03d7163 (ajuste 564845815uiefhdiuhfuf)
->>>>>>> 35a4c71 (final ver ver44545)
 
 Testes realizados com as URLs fornecidas para o exercício:
 
