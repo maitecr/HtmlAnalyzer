@@ -2,7 +2,7 @@ EASTER_EGG_URLS
 
 Solução desenvolvida em linguagem de programação Java (JDK 17) com a finalidade de retornar o conteúdo encontrado na camada mais profunda entre tags HTML.
 
-=========================================================================================
+==============================================================
 
 EXECUÇÃO DA APLICAÇÃO:
 
@@ -14,7 +14,7 @@ Passo 2: após a compilação, insira o seguinte comando para executar do progra
 
 java HtmlAnalyzer + inserir-url-aqui
 
-=========================================================================================
+==============================================================
 
 A solução está dividida entre quatro classes, sendo uma delas a classe principal (main) e as outras referentes a objetos, cada uma com seus devidos métodos, com o objetivo de obter os resultados esperados. Estes resultados podem ser:
 
@@ -34,7 +34,7 @@ Quanto às classes que compõem a solução, temos:
 
 #4 AnalyzingHtmlContent: classe que recebe o conteúdo HTML convertido em String e verifica se o conteúdo entre as tags está na camada mais profunda, ou se há incoerências na estrutura HTML. Após a verificação, irá retornar no console um dos resultados. A análise de tags e conteúdos é realizada em uma estrutura de repetição, utilizando uma pilha e identificando as tags por meio de expressões regulares (regex).
 
-=========================================================================================
+==============================================================
 
 Testes realizados com as URLs fornecidas para o exercício:
 
