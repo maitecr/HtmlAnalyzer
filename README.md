@@ -35,23 +35,3 @@ Quanto às classes que compõem a solução, temos:
 #4 AnalyzingHtmlContent: classe que recebe o conteúdo HTML convertido em String e verifica se o conteúdo entre as tags está na camada mais profunda, ou se há incoerências na estrutura HTML. Após a verificação, irá retornar no console um dos resultados. A análise de tags e conteúdos é realizada em uma estrutura de repetição, utilizando uma pilha e identificando as tags por meio de expressões regulares (regex).
 
 ==============================================================
-
-Testes realizados com as URLs fornecidas para o exercício:
-
-#1 URL: http://hiring.axreng.com/internship/example1.html
-RETORNO: This is the title.
-
-#2 URL: http://hiring.axreng.com/internship/example2.html /
-RETORNO: This is in level 4. Correct result.
-
-#3 URL: http://hiring.axreng.com/internship/example3.html /
-RETORNO: malformed HTML
-
-#4 URL: http://hiring.axreng.com/internship/example4.html /
-RETORNO: malformed HTML
-
-#5 URL: http://hiring.axreng.com/internship/example5.html /
-RETORNO: malformed HTML
-
-#6 URL: http://hiring.axreng.com/internship/example6.html /
-RETORNO: Easter egg | Este n&atilde;o &eacute; s&oacute; mais um exemplo
